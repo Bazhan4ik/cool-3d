@@ -90,9 +90,10 @@ export class CanvasBoxComponent implements OnInit, AfterViewInit {
     const animateGeometry = () => {
       const elapsedTime = clock.getElapsedTime();
 
-      eye.scene.rotation.x = elapsedTime;
-      eye.scene.rotation.y = elapsedTime;
-      eye.scene.rotation.z = elapsedTime;
+      eye.scene.rotation.x = 1.5708;
+      eye.scene.rotation.y = 1.5708;
+      // eye.scene.rotation.y = elapsedTime;
+      // eye.scene.rotation.z = elapsedTime;
 
       // torus.rotation.x = -elapsedTime;
       // torus.rotation.y = -elapsedTime;
